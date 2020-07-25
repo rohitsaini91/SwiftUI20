@@ -11,10 +11,29 @@ import SwiftUI
 struct TabbarView: View {
     var body: some View {
         TabView{
-            Text("Home")
-                .tabItem{
-                    Image(systemName: "house.fill")
+            NavigationView{
+                Home()
+                    .navigationBarTitle("Instagram")
+                    .navigationBarItems(leading: Button(action: {
+                        
+                    }, label: {
+                        Image(systemName: "camera").frame(width: 30, height: 30)
+                        }).foregroundColor(Color("LightDark")),trailing:
+                        
+                        Button(action: {
+                            
+                        }) {
+                            Image(systemName: "paperplane")
+                        }.foregroundColor(Color("LightDark"))
+                        
+                )
             }
+            .tabItem{
+                Image(systemName: "house.fill")
+                
+            }
+            
+            
             Text("Find")
                 .tabItem{
                     Image(systemName: "magnifyingglass")

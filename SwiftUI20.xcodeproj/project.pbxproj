@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		227FF98224CC4B1800AFC930 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 227FF98124CC4B1800AFC930 /* GoogleService-Info.plist */; };
 		227FF98A24CC4BE100AFC930 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FF98924CC4BE100AFC930 /* TabbarView.swift */; };
+		227FF98C24CC51CE00AFC930 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FF98B24CC51CE00AFC930 /* Home.swift */; };
 		22A1F50C24CC49D7002D2812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F50B24CC49D7002D2812 /* AppDelegate.swift */; };
 		22A1F50E24CC49D7002D2812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F50D24CC49D7002D2812 /* SceneDelegate.swift */; };
 		22A1F51024CC49D7002D2812 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F50F24CC49D7002D2812 /* ContentView.swift */; };
@@ -22,6 +23,7 @@
 		15D57FC3A6DE0B8F4595217A /* Pods-SwiftUI20.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI20.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI20/Pods-SwiftUI20.debug.xcconfig"; sourceTree = "<group>"; };
 		227FF98124CC4B1800AFC930 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		227FF98924CC4BE100AFC930 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		227FF98B24CC51CE00AFC930 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		22A1F50824CC49D7002D2812 /* SwiftUI20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A1F50B24CC49D7002D2812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A1F50D24CC49D7002D2812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				227FF98924CC4BE100AFC930 /* TabbarView.swift */,
+				227FF98B24CC51CE00AFC930 /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			files = (
 				22A1F50C24CC49D7002D2812 /* AppDelegate.swift in Sources */,
 				22A1F50E24CC49D7002D2812 /* SceneDelegate.swift in Sources */,
+				227FF98C24CC51CE00AFC930 /* Home.swift in Sources */,
 				227FF98A24CC4BE100AFC930 /* TabbarView.swift in Sources */,
 				22A1F51024CC49D7002D2812 /* ContentView.swift in Sources */,
 			);
