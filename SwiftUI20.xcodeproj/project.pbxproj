@@ -10,6 +10,8 @@
 		227FF98224CC4B1800AFC930 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 227FF98124CC4B1800AFC930 /* GoogleService-Info.plist */; };
 		227FF98A24CC4BE100AFC930 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FF98924CC4BE100AFC930 /* TabbarView.swift */; };
 		227FF98C24CC51CE00AFC930 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FF98B24CC51CE00AFC930 /* Home.swift */; };
+		227FF98F24CCAE6900AFC930 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FF98E24CCAE6900AFC930 /* HomeModel.swift */; };
+		227FF99124CCAEEB00AFC930 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FF99024CCAEEB00AFC930 /* HomeViewModel.swift */; };
 		22A1F50C24CC49D7002D2812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F50B24CC49D7002D2812 /* AppDelegate.swift */; };
 		22A1F50E24CC49D7002D2812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F50D24CC49D7002D2812 /* SceneDelegate.swift */; };
 		22A1F51024CC49D7002D2812 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F50F24CC49D7002D2812 /* ContentView.swift */; };
@@ -24,6 +26,8 @@
 		227FF98124CC4B1800AFC930 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		227FF98924CC4BE100AFC930 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		227FF98B24CC51CE00AFC930 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		227FF98E24CCAE6900AFC930 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		227FF99024CCAEEB00AFC930 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		22A1F50824CC49D7002D2812 /* SwiftUI20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A1F50B24CC49D7002D2812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A1F50D24CC49D7002D2812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 		227FF98324CC4B7500AFC930 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				227FF98D24CCAE4C00AFC930 /* Home */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -67,8 +72,17 @@
 		227FF98624CC4B9000AFC930 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				227FF99024CCAEEB00AFC930 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		227FF98D24CCAE4C00AFC930 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				227FF98E24CCAE6900AFC930 /* HomeModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		22A1F4FF24CC49D7002D2812 = {
@@ -250,6 +264,8 @@
 			files = (
 				22A1F50C24CC49D7002D2812 /* AppDelegate.swift in Sources */,
 				22A1F50E24CC49D7002D2812 /* SceneDelegate.swift in Sources */,
+				227FF99124CCAEEB00AFC930 /* HomeViewModel.swift in Sources */,
+				227FF98F24CCAE6900AFC930 /* HomeModel.swift in Sources */,
 				227FF98C24CC51CE00AFC930 /* Home.swift in Sources */,
 				227FF98A24CC4BE100AFC930 /* TabbarView.swift in Sources */,
 				22A1F51024CC49D7002D2812 /* ContentView.swift in Sources */,

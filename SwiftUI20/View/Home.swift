@@ -9,13 +9,14 @@
 import SwiftUI
 
 struct Home: View {
+    @ObservedObject var homeVM = HomeViewModel()
     var body: some View{
         ScrollView(.vertical, showsIndicators: false){
             VStack{
                 ScrollView(.horizontal,showsIndicators: false){
                     HStack{
-                        ForEach(0..<20){ i in
-                           StoryView(storyname: "test")
+                        ForEach(homeVM.stories){ story in
+                            StoryView(storyPic: story.storyPic,name:story.name)
                         }
                     }
                 }
@@ -28,11 +29,12 @@ struct Home: View {
 }
 
 struct StoryView:View {
-    var storyname: String
+    var storyPic: String
+    var name:String
     var body: some View{
         VStack{
-            Image(storyname).resizable().frame(width: 80, height: 80).clipShape(Circle()).overlay(Circle().stroke(lineWidth: 3).fill(Color.red)).padding(5)
-            Text("User")
+            Image(storyPic).resizable().frame(width: 80, height: 80).clipShape(Circle()).overlay(Circle().stroke(lineWidth: 3).fill(Color.red)).padding(5)
+            Text(name)
         }
     }
 }
@@ -56,11 +58,30 @@ struct HomeFeed:View{
             }.padding(8)
             Image(feedImage).resizable().frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2).padding([.top,.bottom], 10)
             HStack{
-                Image(systemName: "heart").resizable().frame(width: 25, height: 25)
-                Image(systemName: "message").resizable().frame(width: 25, height: 25)
-                Image(systemName: "paperplane").resizable().frame(width: 25, height: 25)
+                Button(action: {
+                    
+                }) {
+                    Image(systemName: "heart").resizable().frame(width: 25, height: 25)
+                }
+                Button(action: {
+                    
+                }) {
+                    Image(systemName: "message").resizable().frame(width: 25, height: 25)
+                }
+                
+                Button(action: {
+                    
+                }) {
+                    Image(systemName: "paperplane").resizable().frame(width: 25, height: 25)
+                }
+                
                 Spacer()
-                Image(systemName: "bookmark").resizable().frame(width: 25, height: 25)
+                Button(action: {
+                    
+                }) {
+                    Image(systemName: "bookmark").resizable().frame(width: 25, height: 25)
+                }
+               
             }.padding(8)
             HStack{
                 VStack(alignment:.leading){
